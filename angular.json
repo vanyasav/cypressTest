@@ -1,5 +1,5 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -14,18 +14,16 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/cypress-test",
-            "index": "src/index.html",
-            "main": "src/main.ts",
+            "index": "projects/testProject/src/index.html",
+            "main": "projects/testProject/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "projects/testProject/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "projects/testProject/src/styles.css"
             ],
             "scripts": []
           },
